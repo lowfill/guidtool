@@ -8,7 +8,6 @@
 	 * @copyright Curverider Ltd 2008-2009
 	 * @link http://elgg.com/
 	 */
-
 	admin_gatekeeper();
 	set_context('admin');
 	

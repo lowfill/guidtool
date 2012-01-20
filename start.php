@@ -12,22 +12,7 @@
 /**
  * Initialise the tool and set menus.
  */
-function guidtool_init()
-{
-	global $CONFIG;
-
-	/*if (isadminloggedin())
-		{
-		add_menu(elgg_echo('guidtool'), $CONFIG->wwwroot . "pg/guidtool/",array(
-		//				menu_item(elgg_echo('guidtool:browse'), $CONFIG->wwwroot."pg/guidtool/"),
-		//				menu_item(elgg_echo('guidtool:import'), $CONFIG->wwwroot."pg/guidtool/import/"),
-		),'guidtool');
-			
-		}*/
-
-	// Register a page handler, so we can have nice URLs
-	//elgg_register_page_handler('guidtool','guidtool_page_handler');
-
+function guidtool_init(){
 	// Register some actions
 	elgg_register_action("guidtool/delete",$CONFIG->pluginspath . "guidtool/actions/delete.php","admin");
 }
@@ -35,8 +20,7 @@ function guidtool_init()
 /**
  * Post init gumph.
  */
-function guidtool_page_setup()
-{
+function guidtool_page_setup(){
 	global $CONFIG;
 	if (elgg_in_context('admin')) {
 		
